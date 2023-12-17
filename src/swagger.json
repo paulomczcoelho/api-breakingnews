@@ -10,17 +10,12 @@
   },
   "servers": [
     {
-      "url": "https://api-breakingnews.onrender.com",
-      "description": "Render"
-    },
-
-    {
       "url": "http://localhost:3000",
       "description": "Local"
     },
     {
-      "url": "https://breakingnews.herokuapp.com",
-      "description": "Heroku"
+      "url": "https://api-breaknews-etg0.onrender.com",
+      "description": "Render Server"
     }
   ],
   "paths": {

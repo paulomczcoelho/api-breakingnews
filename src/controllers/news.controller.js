@@ -272,16 +272,10 @@ export const addComment = async (req, res) => {
   }
 };
 export const deleteComment = async (req, res) => {
+  s;
   try {
     const { idNews, idComment } = req.params;
     const userId = req.userId;
-
-    // console.log(
-    //   `Deleting comment: idNews=${idNews}, idComment=${idComment}, userId=${userId}`
-    // );
-    // if (String(userId) != String(req.userId)) {
-    //   return res.status(400).send({ message: "You can't delete this comment" });
-    // }
 
     const commentDeleted = await deleteCommentService(
       idNews,
