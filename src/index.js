@@ -10,6 +10,7 @@ import userRoute from "./routes/user.route.js";
 import authRoute from "./routes/auth.route.js";
 import newsRoute from "./routes/news.route.js";
 import swaggerRoute from "./routes/swagger.route.cjs";
+// import swaggerRoute from "./routes/swagger.route.js";
 
 dotenv.config();
 
