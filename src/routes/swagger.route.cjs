@@ -1,7 +1,6 @@
 // import { Router } from "express";
 // import swaggerUi from "swagger-ui-express";
 // import swaggerDocument from "../swagger.json" assert { type: "json" };
-// // import swaggerDocument from "../swagger.json" assert { type: "json" };
 
 // const swaggerRouter = Router();
 
@@ -10,13 +9,12 @@
 
 // export default swaggerRouter;
 
-const router = require("express");
+//______________ config para rodar local____________//
+
+const router = require("express").Router();
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("../swagger.json");
-// import swaggerDocument from "../swagger.json" assert { type: "json" };
-
-// const swaggerRouter = Router();
 
 router.use("/", swaggerUi.serve);
 router.get("/", swaggerUi.setup(swaggerDocument));
