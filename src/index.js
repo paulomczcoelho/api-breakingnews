@@ -6,6 +6,8 @@ import express from "express";
 import connectDatabase from "./database/db.js";
 import dotenv from "dotenv";
 
+import cors from "cors";
+
 import userRoute from "./routes/user.route.js";
 import authRoute from "./routes/auth.route.js";
 import newsRoute from "./routes/news.route.js";
@@ -16,6 +18,8 @@ dotenv.config();
 
 const port = process.env.PORT || 3000;
 const app = express();
+
+app.use(cors());
 
 connectDatabase();
 app.use(express.json());
