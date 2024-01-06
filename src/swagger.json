@@ -10,13 +10,14 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000",
-      "description": "Local"
+      "url": "https://api-breakingnews-nkan.onrender.com",
+      "description": "Render Server"
     },
     {
-      "url": "https://api-breakingnews-nkan.onrender.com/doc",
-      "description": "Render Server"
+      "url": "http://localhost:3000",
+      "description": "Local"
     }
+  
   ],
   "paths": {
     "/user/create": {
